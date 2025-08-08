@@ -160,7 +160,7 @@
         .nav-menu {
             display: flex;
             list-style: none;
-            gap: 3rem;
+            gap: 2rem;
             align-items: center;
         }
         
@@ -168,7 +168,7 @@
             text-decoration: none;
             color: #2c3e50;
             font-weight: 500;
-            font-size: 1.4rem;
+            font-size: 1.3rem;
             position: relative;
             transition: all 0.3s ease;
         }
@@ -581,9 +581,66 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         
+        /* ---------- DATA BACKED PRESENTATIONS SECTION ---------- */
+        .data-backed-presentations {
+            background: white;
+        }
+        
+        .presentation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+            gap: 3rem;
+        }
+        
+        .presentation-card {
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+        
+        .presentation-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .presentation-card h3 {
+            font-size: 2.4rem;
+            color: #2c3e50;
+            margin-bottom: 2rem;
+            font-family: 'Orbitron', sans-serif;
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        .presentation-card h3 i {
+            color: #667eea;
+            font-size: 2.4rem;
+        }
+        
+        .presentation-card p {
+            color: #5a6c7d;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+        }
+        
+        .presentation-card strong {
+            color: #2c3e50;
+        }
+        
+        .presentation-card ul {
+            margin: 1rem 0 1rem 2rem;
+        }
+        
+        .presentation-card li {
+            margin-bottom: 0.8rem;
+            color: #5a6c7d;
+        }
+        
         /* ---------- LEADERSHIP SECTION ---------- */
         .leadership {
-            background: white;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
         }
         
         .leadership-grid {
@@ -593,9 +650,10 @@
         }
         
         .leadership-card {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            background: white;
             padding: 3rem;
             border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
             transition: transform 0.3s ease;
         }
         
@@ -635,7 +693,7 @@
         
         /* ---------- CERTIFICATIONS SECTION ---------- */
         .certifications {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
+            background: white;
         }
         
         .certifications-grid {
@@ -645,7 +703,7 @@
         }
         
         .certification-card {
-            background: white;
+            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
             padding: 3rem;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
@@ -853,7 +911,7 @@
                 align-items: center;
             }
             
-            .projects-grid {
+            .projects-grid, .presentation-grid {
                 grid-template-columns: 1fr;
             }
         }
@@ -874,7 +932,8 @@
             .project-card,
             .education-card,
             .leadership-card,
-            .certification-card {
+            .certification-card,
+            .presentation-card {
                 margin: 0 1rem;
             }
         }
@@ -894,6 +953,7 @@
                 <li><a href="#education" class="nav-link">Education</a></li>
                 <li><a href="#skills" class="nav-link">Skills</a></li>
                 <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#data-backed-presentations" class="nav-link">Data Backed Presentations</a></li>
                 <li><a href="#leadership" class="nav-link">Leadership</a></li>
                 <li><a href="#certifications" class="nav-link">Certifications</a></li>
                 <li><a href="#contact" class="nav-link">Contact</a></li>
@@ -1234,6 +1294,66 @@
     </section>
 
     <!-- =========================================================
+         DATA BACKED PRESENTATIONS SECTION
+         ========================================================= -->
+    <section class="data-backed-presentations section" id="data-backed-presentations">
+        <div class="container">
+            <h2 class="section-title">Data Backed Presentations</h2>
+            <p class="section-subtitle">
+                Comprehensive research and strategic analysis backed by data-driven insights
+            </p>
+            <div class="presentation-grid">
+                <div class="presentation-card">
+                    <h3><i class="fas fa-leaf"></i>HempVital Growth Strategy</h3>
+                    <p>
+                        <strong>Strategic Objective:</strong><br>
+                        Reposition HempVital as a mainstream wellness brand through stigma reduction, tiered pricing, and Gen Z-focused education to achieve 25% YoY growth by 2027.
+                    </p>
+                    
+                    <p><strong>Key Market Insights:</strong></p>
+                    <ul>
+                        <li>68% of Indian consumers conflate hemp with marijuana (Primary Research, n=1,200)</li>
+                        <li>Global hemp-based foods market: $6.49B (2025) → $9.08B (2029) at 8.8% CAGR</li>
+                        <li>HempVital products priced 40-60% higher than whey/soy alternatives</li>
+                        <li>Target to capture 6% of India's projected ₹3,300 Cr hemp market by 2027</li>
+                    </ul>
+
+                    <p><strong>Growth Strategy Framework:</strong></p>
+                    <ul>
+                        <li><strong>Education & Rebranding:</strong> Launch myth-busting campaigns to reduce hemp-marijuana confusion</li>
+                        <li><strong>Product Innovation:</strong> Expand into hemp milk, Ayurvedic blends, and affordable "Essentials" lines</li>
+                        <li><strong>Smart Distribution:</strong> Scale D2C e-commerce, partner with Amazon/Nature's Basket, enter pharmacies</li>
+                        <li><strong>Targeted Marketing:</strong> Influencer partnerships, CSR initiatives (hemp sapling planting), digital challenges</li>
+                    </ul>
+
+                    <p><strong>Implementation Roadmap:</strong></p>
+                    <ul>
+                        <li><strong>Phase 1 (Q2-Q4 2025):</strong> Foundation building with rebranding and regulatory compliance</li>
+                        <li><strong>Phase 2 (2026-2027):</strong> Market expansion targeting ₹200 Cr revenue and 2,000 retail touchpoints</li>
+                        <li><strong>Phase 3 (2028):</strong> Leadership & scaling with global expansion and IPO preparation</li>
+                    </ul>
+
+                    <p><strong>Expected Impact:</strong></p>
+                    <ul>
+                        <li>Achieve ₹400 Cr revenue by 2028 with 15% market share</li>
+                        <li>Reduce negative sentiment by 40% through targeted education campaigns</li>
+                        <li>Establish globally scalable business model for international expansion</li>
+                    </ul>
+                    
+                    <!-- Uncomment if you want to add a download link -->
+                    <!--
+                    <div style="margin-top: 2rem;">
+                        <a href="Hempvital-Growth-Strategy.pdf" class="btn btn-secondary" download>
+                            <i class="fas fa-download"></i> Download Full Strategy
+                        </a>
+                    </div>
+                    -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========================================================
          LEADERSHIP SECTION
          ========================================================= -->
     <section class="leadership section" id="leadership">
@@ -1321,13 +1441,14 @@
                     <p>Creative problem-solving and strategic thinking for luxury clothing company revenue optimization</p>
                 </div>
 
-                <div class="certification-card" href="https://drive.google.com/file/d/1ebjVvgco7h0hobukjV8gki-x_IlCMjoE/view?usp=sharing">
+                <div class="certification-card">
                     <div class="cert-icon">
                         <i class="fas fa-medal"></i>
                     </div>
                     <h3>Deloitte Australia</h3>
-                    <p><strong></strong></p>
-                    <p>Virtual Internship program | July 2025 <br>Built a dashboard to explore the client's telemetry data - conducted forensic investigations with data analytics</p>
+                    <p><strong>Virtual Internship Program</strong></p>
+                    <p>July 2025</p>
+                    <p>Built a dashboard to explore the client's telemetry data - conducted forensic investigations with data analytics</p>
                 </div>
                 
                 <div class="certification-card">
@@ -1433,9 +1554,6 @@
                 <a href="mailto:shivkumardevane47@gmail.com" title="Email">
                     <i class="fas fa-envelope"></i>
                 </a>
-                <!--<a href="tel:+919811851974" title="Phone">
-                    <i class="fas fa-phone"></i>
-                </a> -->
             </div>
             <p>&copy; 2025 Shivkumar Devane. All rights reserved.</p>
             <p>BTech Bio-Technology + CS Minor | Delhi Technological University</p>
@@ -1524,7 +1642,7 @@
         }, observerOptions);
         
         // Observe all cards and sections
-        document.querySelectorAll('.project-card, .education-card, .leadership-card, .certification-card, .skill-category').forEach(el => {
+        document.querySelectorAll('.project-card, .education-card, .leadership-card, .certification-card, .skill-category, .presentation-card').forEach(el => {
             observer.observe(el);
         });
         
@@ -1657,7 +1775,7 @@
         // ========================================
         // PROJECT CARD HOVER EFFECTS
         // ========================================
-        const projectCards = document.querySelectorAll('.project-card');
+        const projectCards = document.querySelectorAll('.project-card, .presentation-card');
         
         projectCards.forEach(card => {
             card.addEventListener('mouseenter', () => {
